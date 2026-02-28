@@ -1,44 +1,38 @@
-def add(x, y):
-    return x + y
+:
 
-def subtract(x, y):
-    return x - y
+🧮 Python Calculator
 
-def multiply(x, y):
-    return x * y
+A command-line calculator application built with Python 3 that performs basic arithmetic operations with proper input validation and error handling.
 
-def divide(x, y):
-    if y != 0:
-        return x / y
-    else:
-        return "Error! Division by zero."
+This project is ideal for beginners who want to practice:
 
-def calculator():
-    print("Select operation:")
-    print("1. Add")
-    print("2. Subtract")
-    print("3. Multiply")
-    print("4. Divide")
+Variables and data types
 
-    choice = input("Enter choice (1/2/3/4): ")
+Conditional statements
 
-    if choice in ('1', '2', '3', '4'):
-        try:
-            num1 = float(input("Enter first number: "))
-            num2 = float(input("Enter second number: "))
-        except ValueError:
-            print("Invalid input. Please enter numbers only.")
-            return
+Functions
 
-        if choice == '1':
-            print("Result: ", add(num1, num2))
-        elif choice == '2':
-            print("Result: ", subtract(num1, num2))
-        elif choice == '3':
-            print("Result: ", multiply(num1, num2))
-        elif choice == '4':
-            print("Result: ", divide(num1, num2))
-    else:
-        print("Invalid input")
+Loops
 
-calculator()
+Exception handling
+
+Clean code structure
+
+📌 Features
+
+✔ Addition (+)
+✔ Subtraction (-)
+✔ Multiplication (*)
+✔ Division (/)
+✔ Division-by-zero protection
+✔ Input validation using try/except
+✔ Continuous calculation mode (optional loop support)
+✔ Clean and beginner-friendly code
+
+🛠 Technologies Used
+
+Language: Python 3.x
+
+Libraries: None (Standard Library only)
+
+Interface: Command Line Interface (CLI)
